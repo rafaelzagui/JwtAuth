@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: JWTauth
+  datasource:
+    url: jdbc:postgresql://localhost:5432/FinancialControl
+    username: admin
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+# Configurações da aplicação
+jwt:
+  secret: BOITATA # Chave secreta para assinar o token JWT
+  expiration: 3600000   # Tempo de expiração do token em milissegundos (1 hora)
